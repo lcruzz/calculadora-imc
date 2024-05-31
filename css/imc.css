@@ -1,0 +1,99 @@
+:root{
+    --linear_gradient: linear-gradient(90deg, #9A32CD, #E066FF,#68228B)
+}
+
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    background: var(--linear_gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#calcular{
+    background-color: #131313;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+#calcular h2{
+    font-size: 30px;
+    position: relative;
+}
+
+#calcular h2::before{
+    position: absolute;
+    content: " ";
+    height: 3px;
+    width: 113px;
+    background: var(--linear_gradient);
+    bottom: 5px;
+}
+#input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-field label{
+    font-size: 15px;
+    color: #CD96CD;
+    font-weight: 500;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #4C1D95;
+    font-size: 13px;
+    padding: 5px;
+    color: white;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.input-field input:placeholder-shown{
+    font-size: 13px;
+}
+
+#resultado{
+    text-align: center;
+    font-size: 25px;
+}
+
+#imc{
+    font-size: 18px;
+}
+
+#calculate{
+    background: var(--linear_gradient);
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
