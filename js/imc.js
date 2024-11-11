@@ -23,7 +23,7 @@ function imc(){
     document.getElementById("peso").value = ""
 }
 
-function caracteres{
+function caracteres(){
     let inputaltura = document.getElementById("altura").value
     let inputpeso = document.getElementById("peso").value
     
