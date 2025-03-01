@@ -1,6 +1,6 @@
 function imc(){
-    let altura = document.getElementById("altura").value
-    let peso = document.getElementById("peso").value
+    let altura = +document.getElementById("altura").value
+    let peso = +document.getElementById("peso").value
     let imc = peso/(altura**2)
 
     if ((imc < 18.5)){
@@ -22,8 +22,24 @@ function imc(){
     document.getElementById("altura").value = ""
     document.getElementById("peso").value = ""
 }
+
+function altura() {
+    let input = document.getElementById("altura")
+    let valor = input.value
+    
+    if (valor.length > 1 && !valor.includes('.')){
+        input.value = valor.substring(0, 1) + '.' + valor.substring(1)
     }
-    if (inputpeso.value.length > 3){
-        inputpeso.toFixed(3)
+    if (valor.length > 4){
+        input.value = valor.substring(0, 4)
+    }
+}
+        
+function peso() {
+    let input = document.getElementById("peso")
+    let valor = input.value
+
+    if (valor.length > 3){
+        input.value = valor.substring(0, 3)
     }
 }
