@@ -22,13 +22,6 @@ function imc(){
     document.getElementById("altura").value = ""
     document.getElementById("peso").value = ""
 }
-
-function caracteres(){
-    let inputaltura = document.getElementById("altura").value
-    let inputpeso = document.getElementById("peso").value
-    
-    if (inputaltura.value.length > 3){
-        inputaltura.toFixed(3)
     }
     if (inputpeso.value.length > 3){
         inputpeso.toFixed(3)
